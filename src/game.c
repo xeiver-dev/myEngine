@@ -1,6 +1,6 @@
 #include "game.h"
 #include "SDL.h"
-#include <stdbool.h>
+#include "window.h"
 
 void game__Initialize(Game* g, int width, int height)
 {
@@ -21,8 +21,8 @@ void game__Draw(Game* g)
 
 void game__Update(Game* g)
 {
+  window__PollEvents(g->window);
 }
-
 
 void game__Shutdown(Game* g)
 {

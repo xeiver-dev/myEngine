@@ -3,15 +3,14 @@ int main(int argc, char *argv[])
 {
   Game game = {0};
 
-  game__Init(&game, 800, 600);
+  game__Initialize(&game, 800, 600);
 
   while (game.running) 
   {
-    game__ProcessEvents(&game);
     game__Update(&game);
-    game__Draw(&game);
+    game__Render(&game);
   }
-  game__Close(&game);
+  game__Shutdown(&game);
 
   return 0;
 }
