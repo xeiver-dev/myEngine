@@ -25,8 +25,8 @@ void graphics__Init(Graphics *gp, Window *win)
 }
 void graphics__Clear(Graphics *gp, Color bgColor)
 {
-  SDL_RenderClear(gp->renderer);
   SDL_SetRenderDrawColor(gp->renderer, bgColor.r, bgColor.g, bgColor.b, bgColor.a);
+  SDL_RenderClear(gp->renderer);
 }
 
 void graphics__Display(Graphics *gp)

@@ -16,7 +16,6 @@ typedef struct {
 
 void window__Initialize(Window* win, int w, int h, const char *title);
 Vector2 window__GetSize(Window* win);
-void window__PollEvents(Window* win, bool running);
 void window__Close(Window* win);
 
 #endif

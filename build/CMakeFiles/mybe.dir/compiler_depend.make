@@ -239,6 +239,7 @@ CMakeFiles/mybe.dir/src/game.c.o: /home/nathaniel/Projects/mybe/src/game.c \
 CMakeFiles/mybe.dir/src/graphics.c.o: /home/nathaniel/Projects/mybe/src/graphics.c \
   /home/nathaniel/Projects/mybe/include/common.h \
   /home/nathaniel/Projects/mybe/include/graphics.h \
+  /home/nathaniel/Projects/mybe/include/window.h \
   /usr/include/SDL2/SDL.h \
   /usr/include/SDL2/SDL_assert.h \
   /usr/include/SDL2/SDL_atomic.h \
@@ -448,6 +449,7 @@ CMakeFiles/mybe.dir/src/graphics.c.o: /home/nathaniel/Projects/mybe/src/graphics
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/sm4intrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/smmintrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdbool.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/tbmintrin.h \
