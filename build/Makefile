@@ -129,6 +129,30 @@ mybe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/build
 .PHONY : mybe/fast
 
+src/engine.o: src/engine.c.o
+.PHONY : src/engine.o
+
+# target to build an object file
+src/engine.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/engine.c.o
+.PHONY : src/engine.c.o
+
+src/engine.i: src/engine.c.i
+.PHONY : src/engine.i
+
+# target to preprocess a source file
+src/engine.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/engine.c.i
+.PHONY : src/engine.c.i
+
+src/engine.s: src/engine.c.s
+.PHONY : src/engine.s
+
+# target to generate assembly for a file
+src/engine.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/engine.c.s
+.PHONY : src/engine.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mybe"
+	@echo "... src/engine.o"
+	@echo "... src/engine.i"
+	@echo "... src/engine.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

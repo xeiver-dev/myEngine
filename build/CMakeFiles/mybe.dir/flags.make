@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/nathaniel/Projects/mybe/include
+C_INCLUDES = -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2
 
 C_FLAGS = -std=gnu99
 

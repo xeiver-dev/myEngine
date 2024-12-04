@@ -7,7 +7,7 @@ set(CMAKE_C_STANDARD 99)
 
 file(GLOB SOURCES src/*.c)
 include_directories(include)
-include_directories(/usr/include)
+include_directories(/usr/include/SDL2)
 
 add_executable(mybe ${SOURCES})
 target_link_libraries(mybe SDL2 SDL2_ttf SDL2_image SDL2_net)
