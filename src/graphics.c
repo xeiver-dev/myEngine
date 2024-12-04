@@ -10,11 +10,11 @@
 
 void graphics__Init(Graphics *gp, Window *win)
 {
-  /*if (IMG_Init(IMG_INIT_PNG) != 0) */
-  /*{*/
-  /*  fprintf(stderr, "Failed to initialize SDL_image: %s\n", IMG_GetError());*/
-  /*  exit(-1);*/
-  /*}*/
+  if (!IMG_Init(IMG_INIT_PNG)) 
+  {
+    fprintf(stderr, "Failed to initialize SDL_image: %s\n", IMG_GetError());
+    exit(-1);
+  }
 
   gp->renderer = SDL_CreateRenderer(win->window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
   if (gp->renderer == NULL)
@@ -39,9 +39,9 @@ void graphics__DrawRect(Graphics *gp, const char *mode,
 {
   SDL_SetRenderDrawColor(gp->renderer, color.r, color.g, color.b, color.a);
   if (strcmp(mode, "line")) {
-    SDL_RenderDrawRect(gp->renderer, rect);
-  } else if (strcmp(mode, "fill")) {
     SDL_RenderFillRect(gp->renderer, rect);
+  } else if (strcmp(mode, "fill")) {
+    SDL_RenderDrawRect(gp->renderer, rect);
   }
 }
 
@@ -64,24 +64,24 @@ void graphics__DrawCircle(Graphics *gp, Circle *circle, Color color)
 }
 
 
-/*SDL_Texture* graphics__LoadTexture(Graphics *gp, const char *file)*/
-/*{*/
-/*  SDL_Texture *tex = IMG_LoadTexture(gp->renderer, file); */
-/*  return tex;*/
-/*}*/
-/**/
-/*void graphics__DrawTexture(Graphics *gp, SDL_Texture *texture, SDL_Rect *src_rect, SDL_Rect *dst_rect)*/
-/*{*/
-/*  SDL_RenderCopy(gp->renderer, texture, src_rect, dst_rect);*/
-/*}*/
-/**/
-/*void graphics__DestroyTexture(Graphics *gp, SDL_Texture *texture)*/
-/*{*/
-/*  SDL_DestroyTexture(texture);*/
-/*}*/
+SDL_Texture* graphics__LoadTexture(Graphics *gp, const char *file)
+{
+  SDL_Texture *tex = IMG_LoadTexture(gp->renderer, file); 
+  return tex;
+}
+
+void graphics__DrawTexture(Graphics *gp, SDL_Texture *texture, SDL_Rect *src_rect, SDL_Rect *dst_rect)
+{
+  SDL_RenderCopy(gp->renderer, texture, src_rect, dst_rect);
+}
+
+void graphics__DestroyTexture(Graphics *gp, SDL_Texture *texture)
+{
+  SDL_DestroyTexture(texture);
+}
 
 void graphics__Quit(Graphics *gp)
 {
   SDL_DestroyRenderer(gp->renderer);
-  /*IMG_Quit();*/
+  IMG_Quit();
 }

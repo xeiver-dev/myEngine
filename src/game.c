@@ -27,9 +27,16 @@ void game__Render(Game* g)
   Color bgColor = (Color){100, 100, 100, 255};
   graphics__Clear(&g->graphics, bgColor);
 
+  // Draws a circle in 200, 200 coordinate
   Circle  c = (Circle){(Vector2){200, 200}, 20};
   Color cColor = (Color){255, 0, 0, 255};
   graphics__DrawCircle(&g->graphics, &c, cColor);
+
+  // Draws a huge rectangle on the side of the circle
+  SDL_Rect rect = (SDL_Rect){500, 200, 45, 50};
+  Color rectColor = (Color){0, 255, 255, 255};
+  graphics__DrawRect(&g->graphics, "fill", &rect, rectColor);
+
 
   graphics__Display(&g->graphics);
 }
