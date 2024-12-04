@@ -1,11 +1,15 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
+#include "graphics.h"
+#include "input.h"
 #include "window.h"
 #include <stdbool.h>
 
 typedef struct {
   Window* window;
+  Graphics* graphics;
+  Input* input;
 
   bool          running;
   int           width, height;

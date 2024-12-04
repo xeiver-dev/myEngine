@@ -72,24 +72,52 @@ include CMakeFiles/mybe.dir/flags.make
 CMakeFiles/mybe.dir/codegen:
 .PHONY : CMakeFiles/mybe.dir/codegen
 
-CMakeFiles/mybe.dir/src/engine.c.o: CMakeFiles/mybe.dir/flags.make
-CMakeFiles/mybe.dir/src/engine.c.o: /home/nathaniel/Projects/mybe/src/engine.c
-CMakeFiles/mybe.dir/src/engine.c.o: CMakeFiles/mybe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mybe.dir/src/engine.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mybe.dir/src/engine.c.o -MF CMakeFiles/mybe.dir/src/engine.c.o.d -o CMakeFiles/mybe.dir/src/engine.c.o -c /home/nathaniel/Projects/mybe/src/engine.c
+CMakeFiles/mybe.dir/src/game.c.o: CMakeFiles/mybe.dir/flags.make
+CMakeFiles/mybe.dir/src/game.c.o: /home/nathaniel/Projects/mybe/src/game.c
+CMakeFiles/mybe.dir/src/game.c.o: CMakeFiles/mybe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mybe.dir/src/game.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mybe.dir/src/game.c.o -MF CMakeFiles/mybe.dir/src/game.c.o.d -o CMakeFiles/mybe.dir/src/game.c.o -c /home/nathaniel/Projects/mybe/src/game.c
 
-CMakeFiles/mybe.dir/src/engine.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mybe.dir/src/engine.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathaniel/Projects/mybe/src/engine.c > CMakeFiles/mybe.dir/src/engine.c.i
+CMakeFiles/mybe.dir/src/game.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mybe.dir/src/game.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathaniel/Projects/mybe/src/game.c > CMakeFiles/mybe.dir/src/game.c.i
 
-CMakeFiles/mybe.dir/src/engine.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mybe.dir/src/engine.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathaniel/Projects/mybe/src/engine.c -o CMakeFiles/mybe.dir/src/engine.c.s
+CMakeFiles/mybe.dir/src/game.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mybe.dir/src/game.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathaniel/Projects/mybe/src/game.c -o CMakeFiles/mybe.dir/src/game.c.s
+
+CMakeFiles/mybe.dir/src/graphics.c.o: CMakeFiles/mybe.dir/flags.make
+CMakeFiles/mybe.dir/src/graphics.c.o: /home/nathaniel/Projects/mybe/src/graphics.c
+CMakeFiles/mybe.dir/src/graphics.c.o: CMakeFiles/mybe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mybe.dir/src/graphics.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mybe.dir/src/graphics.c.o -MF CMakeFiles/mybe.dir/src/graphics.c.o.d -o CMakeFiles/mybe.dir/src/graphics.c.o -c /home/nathaniel/Projects/mybe/src/graphics.c
+
+CMakeFiles/mybe.dir/src/graphics.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mybe.dir/src/graphics.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathaniel/Projects/mybe/src/graphics.c > CMakeFiles/mybe.dir/src/graphics.c.i
+
+CMakeFiles/mybe.dir/src/graphics.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mybe.dir/src/graphics.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathaniel/Projects/mybe/src/graphics.c -o CMakeFiles/mybe.dir/src/graphics.c.s
+
+CMakeFiles/mybe.dir/src/input.c.o: CMakeFiles/mybe.dir/flags.make
+CMakeFiles/mybe.dir/src/input.c.o: /home/nathaniel/Projects/mybe/src/input.c
+CMakeFiles/mybe.dir/src/input.c.o: CMakeFiles/mybe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mybe.dir/src/input.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mybe.dir/src/input.c.o -MF CMakeFiles/mybe.dir/src/input.c.o.d -o CMakeFiles/mybe.dir/src/input.c.o -c /home/nathaniel/Projects/mybe/src/input.c
+
+CMakeFiles/mybe.dir/src/input.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mybe.dir/src/input.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathaniel/Projects/mybe/src/input.c > CMakeFiles/mybe.dir/src/input.c.i
+
+CMakeFiles/mybe.dir/src/input.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mybe.dir/src/input.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathaniel/Projects/mybe/src/input.c -o CMakeFiles/mybe.dir/src/input.c.s
 
 CMakeFiles/mybe.dir/src/main.c.o: CMakeFiles/mybe.dir/flags.make
 CMakeFiles/mybe.dir/src/main.c.o: /home/nathaniel/Projects/mybe/src/main.c
 CMakeFiles/mybe.dir/src/main.c.o: CMakeFiles/mybe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mybe.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mybe.dir/src/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mybe.dir/src/main.c.o -MF CMakeFiles/mybe.dir/src/main.c.o.d -o CMakeFiles/mybe.dir/src/main.c.o -c /home/nathaniel/Projects/mybe/src/main.c
 
 CMakeFiles/mybe.dir/src/main.c.i: cmake_force
@@ -100,20 +128,40 @@ CMakeFiles/mybe.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mybe.dir/src/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathaniel/Projects/mybe/src/main.c -o CMakeFiles/mybe.dir/src/main.c.s
 
+CMakeFiles/mybe.dir/src/window.c.o: CMakeFiles/mybe.dir/flags.make
+CMakeFiles/mybe.dir/src/window.c.o: /home/nathaniel/Projects/mybe/src/window.c
+CMakeFiles/mybe.dir/src/window.c.o: CMakeFiles/mybe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mybe.dir/src/window.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mybe.dir/src/window.c.o -MF CMakeFiles/mybe.dir/src/window.c.o.d -o CMakeFiles/mybe.dir/src/window.c.o -c /home/nathaniel/Projects/mybe/src/window.c
+
+CMakeFiles/mybe.dir/src/window.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mybe.dir/src/window.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nathaniel/Projects/mybe/src/window.c > CMakeFiles/mybe.dir/src/window.c.i
+
+CMakeFiles/mybe.dir/src/window.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mybe.dir/src/window.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nathaniel/Projects/mybe/src/window.c -o CMakeFiles/mybe.dir/src/window.c.s
+
 # Object files for target mybe
 mybe_OBJECTS = \
-"CMakeFiles/mybe.dir/src/engine.c.o" \
-"CMakeFiles/mybe.dir/src/main.c.o"
+"CMakeFiles/mybe.dir/src/game.c.o" \
+"CMakeFiles/mybe.dir/src/graphics.c.o" \
+"CMakeFiles/mybe.dir/src/input.c.o" \
+"CMakeFiles/mybe.dir/src/main.c.o" \
+"CMakeFiles/mybe.dir/src/window.c.o"
 
 # External object files for target mybe
 mybe_EXTERNAL_OBJECTS =
 
-mybe: CMakeFiles/mybe.dir/src/engine.c.o
+mybe: CMakeFiles/mybe.dir/src/game.c.o
+mybe: CMakeFiles/mybe.dir/src/graphics.c.o
+mybe: CMakeFiles/mybe.dir/src/input.c.o
 mybe: CMakeFiles/mybe.dir/src/main.c.o
+mybe: CMakeFiles/mybe.dir/src/window.c.o
 mybe: CMakeFiles/mybe.dir/build.make
 mybe: CMakeFiles/mybe.dir/compiler_depend.ts
 mybe: CMakeFiles/mybe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable mybe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable mybe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mybe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

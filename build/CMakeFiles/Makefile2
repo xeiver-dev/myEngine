@@ -85,12 +85,12 @@ clean: CMakeFiles/mybe.dir/clean
 CMakeFiles/mybe.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=1,2,3 "Built target mybe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target mybe"
 .PHONY : CMakeFiles/mybe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mybe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathaniel/Projects/mybe/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathaniel/Projects/mybe/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mybe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathaniel/Projects/mybe/build/CMakeFiles 0
 .PHONY : CMakeFiles/mybe.dir/rule

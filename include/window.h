@@ -4,6 +4,7 @@
 #include "SDL_events.h"
 #include "SDL_video.h"
 #include "common.h"
+#include <stdbool.h>
 
 typedef struct {
   SDL_Window* window;
@@ -13,10 +14,9 @@ typedef struct {
   const char* title;
 } Window;
 
-Window* window__Create(int w, int h);
-void window__SetTitle(Window* win, const char* t); 
+void window__Initialize(Window* win, int w, int h, const char *title);
 Vector2 window__GetSize(Window* win);
-void window__PollEvents(Window* win);
+void window__PollEvents(Window* win, bool running);
 void window__Close(Window* win);
 
 #endif

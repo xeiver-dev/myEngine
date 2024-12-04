@@ -8,8 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nathaniel/Projects/mybe/src/engine.c" "CMakeFiles/mybe.dir/src/engine.c.o" "gcc" "CMakeFiles/mybe.dir/src/engine.c.o.d"
+  "/home/nathaniel/Projects/mybe/src/game.c" "CMakeFiles/mybe.dir/src/game.c.o" "gcc" "CMakeFiles/mybe.dir/src/game.c.o.d"
+  "/home/nathaniel/Projects/mybe/src/graphics.c" "CMakeFiles/mybe.dir/src/graphics.c.o" "gcc" "CMakeFiles/mybe.dir/src/graphics.c.o.d"
+  "/home/nathaniel/Projects/mybe/src/input.c" "CMakeFiles/mybe.dir/src/input.c.o" "gcc" "CMakeFiles/mybe.dir/src/input.c.o.d"
   "/home/nathaniel/Projects/mybe/src/main.c" "CMakeFiles/mybe.dir/src/main.c.o" "gcc" "CMakeFiles/mybe.dir/src/main.c.o.d"
+  "/home/nathaniel/Projects/mybe/src/window.c" "CMakeFiles/mybe.dir/src/window.c.o" "gcc" "CMakeFiles/mybe.dir/src/window.c.o.d"
   "" "mybe" "gcc" "CMakeFiles/mybe.dir/link.d"
   )
 

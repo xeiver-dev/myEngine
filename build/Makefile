@@ -129,29 +129,77 @@ mybe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/build
 .PHONY : mybe/fast
 
-src/engine.o: src/engine.c.o
-.PHONY : src/engine.o
+src/game.o: src/game.c.o
+.PHONY : src/game.o
 
 # target to build an object file
-src/engine.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/engine.c.o
-.PHONY : src/engine.c.o
+src/game.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/game.c.o
+.PHONY : src/game.c.o
 
-src/engine.i: src/engine.c.i
-.PHONY : src/engine.i
+src/game.i: src/game.c.i
+.PHONY : src/game.i
 
 # target to preprocess a source file
-src/engine.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/engine.c.i
-.PHONY : src/engine.c.i
+src/game.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/game.c.i
+.PHONY : src/game.c.i
 
-src/engine.s: src/engine.c.s
-.PHONY : src/engine.s
+src/game.s: src/game.c.s
+.PHONY : src/game.s
 
 # target to generate assembly for a file
-src/engine.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/engine.c.s
-.PHONY : src/engine.c.s
+src/game.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/game.c.s
+.PHONY : src/game.c.s
+
+src/graphics.o: src/graphics.c.o
+.PHONY : src/graphics.o
+
+# target to build an object file
+src/graphics.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/graphics.c.o
+.PHONY : src/graphics.c.o
+
+src/graphics.i: src/graphics.c.i
+.PHONY : src/graphics.i
+
+# target to preprocess a source file
+src/graphics.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/graphics.c.i
+.PHONY : src/graphics.c.i
+
+src/graphics.s: src/graphics.c.s
+.PHONY : src/graphics.s
+
+# target to generate assembly for a file
+src/graphics.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/graphics.c.s
+.PHONY : src/graphics.c.s
+
+src/input.o: src/input.c.o
+.PHONY : src/input.o
+
+# target to build an object file
+src/input.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/input.c.o
+.PHONY : src/input.c.o
+
+src/input.i: src/input.c.i
+.PHONY : src/input.i
+
+# target to preprocess a source file
+src/input.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/input.c.i
+.PHONY : src/input.c.i
+
+src/input.s: src/input.c.s
+.PHONY : src/input.s
+
+# target to generate assembly for a file
+src/input.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/input.c.s
+.PHONY : src/input.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -177,6 +225,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/window.o: src/window.c.o
+.PHONY : src/window.o
+
+# target to build an object file
+src/window.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/window.c.o
+.PHONY : src/window.c.o
+
+src/window.i: src/window.c.i
+.PHONY : src/window.i
+
+# target to preprocess a source file
+src/window.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/window.c.i
+.PHONY : src/window.c.i
+
+src/window.s: src/window.c.s
+.PHONY : src/window.s
+
+# target to generate assembly for a file
+src/window.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/window.c.s
+.PHONY : src/window.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mybe"
-	@echo "... src/engine.o"
-	@echo "... src/engine.i"
-	@echo "... src/engine.s"
+	@echo "... src/game.o"
+	@echo "... src/game.i"
+	@echo "... src/game.s"
+	@echo "... src/graphics.o"
+	@echo "... src/graphics.i"
+	@echo "... src/graphics.s"
+	@echo "... src/input.o"
+	@echo "... src/input.i"
+	@echo "... src/input.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/window.o"
+	@echo "... src/window.i"
+	@echo "... src/window.s"
 .PHONY : help
 
 
