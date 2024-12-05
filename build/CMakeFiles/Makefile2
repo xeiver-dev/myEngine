@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /home/nathaniel/Projects/mybe/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/mybe.dir/all
+all: CMakeFiles/myEngine.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/mybe.dir/codegen
+codegen: CMakeFiles/myEngine.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,39 +75,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/mybe.dir/clean
+clean: CMakeFiles/myEngine.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/mybe.dir
+# Target rules for target CMakeFiles/myEngine.dir
 
 # All Build rule for target.
-CMakeFiles/mybe.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target mybe"
-.PHONY : CMakeFiles/mybe.dir/all
+CMakeFiles/myEngine.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nathaniel/Projects/mybe/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target myEngine"
+.PHONY : CMakeFiles/myEngine.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/mybe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathaniel/Projects/mybe/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mybe.dir/all
+CMakeFiles/myEngine.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathaniel/Projects/mybe/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/myEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathaniel/Projects/mybe/build/CMakeFiles 0
-.PHONY : CMakeFiles/mybe.dir/rule
+.PHONY : CMakeFiles/myEngine.dir/rule
 
 # Convenience name for target.
-mybe: CMakeFiles/mybe.dir/rule
-.PHONY : mybe
+myEngine: CMakeFiles/myEngine.dir/rule
+.PHONY : myEngine
 
 # codegen rule for target.
-CMakeFiles/mybe.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/codegen
-.PHONY : CMakeFiles/mybe.dir/codegen
+CMakeFiles/myEngine.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/codegen
+.PHONY : CMakeFiles/myEngine.dir/codegen
 
 # clean rule for target.
-CMakeFiles/mybe.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/clean
-.PHONY : CMakeFiles/mybe.dir/clean
+CMakeFiles/myEngine.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/clean
+.PHONY : CMakeFiles/myEngine.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

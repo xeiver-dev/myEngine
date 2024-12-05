@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/myEngine.dir/link.d CMakeFiles/myEngine.dir/src/game.c.o CMakeFiles/myEngine.dir/src/graphics.c.o CMakeFiles/myEngine.dir/src/input.c.o CMakeFiles/myEngine.dir/src/main.c.o "CMakeFiles/myEngine.dir/src/texture-manager.c.o" CMakeFiles/myEngine.dir/src/window.c.o -o myEngine  -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_net

@@ -1,32 +1,38 @@
 [
 {
   "directory": "/home/nathaniel/Projects/mybe/build",
-  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/mybe.dir/src/game.c.o -c /home/nathaniel/Projects/mybe/src/game.c",
+  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/myEngine.dir/src/game.c.o -c /home/nathaniel/Projects/mybe/src/game.c",
   "file": "/home/nathaniel/Projects/mybe/src/game.c",
-  "output": "CMakeFiles/mybe.dir/src/game.c.o"
+  "output": "CMakeFiles/myEngine.dir/src/game.c.o"
 },
 {
   "directory": "/home/nathaniel/Projects/mybe/build",
-  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/mybe.dir/src/graphics.c.o -c /home/nathaniel/Projects/mybe/src/graphics.c",
+  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/myEngine.dir/src/graphics.c.o -c /home/nathaniel/Projects/mybe/src/graphics.c",
   "file": "/home/nathaniel/Projects/mybe/src/graphics.c",
-  "output": "CMakeFiles/mybe.dir/src/graphics.c.o"
+  "output": "CMakeFiles/myEngine.dir/src/graphics.c.o"
 },
 {
   "directory": "/home/nathaniel/Projects/mybe/build",
-  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/mybe.dir/src/input.c.o -c /home/nathaniel/Projects/mybe/src/input.c",
+  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/myEngine.dir/src/input.c.o -c /home/nathaniel/Projects/mybe/src/input.c",
   "file": "/home/nathaniel/Projects/mybe/src/input.c",
-  "output": "CMakeFiles/mybe.dir/src/input.c.o"
+  "output": "CMakeFiles/myEngine.dir/src/input.c.o"
 },
 {
   "directory": "/home/nathaniel/Projects/mybe/build",
-  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/mybe.dir/src/main.c.o -c /home/nathaniel/Projects/mybe/src/main.c",
+  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/myEngine.dir/src/main.c.o -c /home/nathaniel/Projects/mybe/src/main.c",
   "file": "/home/nathaniel/Projects/mybe/src/main.c",
-  "output": "CMakeFiles/mybe.dir/src/main.c.o"
+  "output": "CMakeFiles/myEngine.dir/src/main.c.o"
 },
 {
   "directory": "/home/nathaniel/Projects/mybe/build",
-  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/mybe.dir/src/window.c.o -c /home/nathaniel/Projects/mybe/src/window.c",
+  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/myEngine.dir/src/texture-manager.c.o -c /home/nathaniel/Projects/mybe/src/texture-manager.c",
+  "file": "/home/nathaniel/Projects/mybe/src/texture-manager.c",
+  "output": "CMakeFiles/myEngine.dir/src/texture-manager.c.o"
+},
+{
+  "directory": "/home/nathaniel/Projects/mybe/build",
+  "command": "/usr/bin/cc  -I/home/nathaniel/Projects/mybe/include -I/usr/include/SDL2 -g -std=gnu99 -o CMakeFiles/myEngine.dir/src/window.c.o -c /home/nathaniel/Projects/mybe/src/window.c",
   "file": "/home/nathaniel/Projects/mybe/src/window.c",
-  "output": "CMakeFiles/mybe.dir/src/window.c.o"
+  "output": "CMakeFiles/myEngine.dir/src/window.c.o"
 }
 ]

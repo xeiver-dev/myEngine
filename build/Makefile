@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mybe
+# Target rules for targets named myEngine
 
 # Build rule for target.
-mybe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mybe
-.PHONY : mybe
+myEngine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myEngine
+.PHONY : myEngine
 
 # fast build rule for target.
-mybe/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/build
-.PHONY : mybe/fast
+myEngine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/build
+.PHONY : myEngine/fast
 
 src/game.o: src/game.c.o
 .PHONY : src/game.o
 
 # target to build an object file
 src/game.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/game.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/game.c.o
 .PHONY : src/game.c.o
 
 src/game.i: src/game.c.i
@@ -142,7 +142,7 @@ src/game.i: src/game.c.i
 
 # target to preprocess a source file
 src/game.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/game.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/game.c.i
 .PHONY : src/game.c.i
 
 src/game.s: src/game.c.s
@@ -150,7 +150,7 @@ src/game.s: src/game.c.s
 
 # target to generate assembly for a file
 src/game.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/game.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/game.c.s
 .PHONY : src/game.c.s
 
 src/graphics.o: src/graphics.c.o
@@ -158,7 +158,7 @@ src/graphics.o: src/graphics.c.o
 
 # target to build an object file
 src/graphics.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/graphics.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/graphics.c.o
 .PHONY : src/graphics.c.o
 
 src/graphics.i: src/graphics.c.i
@@ -166,7 +166,7 @@ src/graphics.i: src/graphics.c.i
 
 # target to preprocess a source file
 src/graphics.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/graphics.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/graphics.c.i
 .PHONY : src/graphics.c.i
 
 src/graphics.s: src/graphics.c.s
@@ -174,7 +174,7 @@ src/graphics.s: src/graphics.c.s
 
 # target to generate assembly for a file
 src/graphics.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/graphics.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/graphics.c.s
 .PHONY : src/graphics.c.s
 
 src/input.o: src/input.c.o
@@ -182,7 +182,7 @@ src/input.o: src/input.c.o
 
 # target to build an object file
 src/input.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/input.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/input.c.o
 .PHONY : src/input.c.o
 
 src/input.i: src/input.c.i
@@ -190,7 +190,7 @@ src/input.i: src/input.c.i
 
 # target to preprocess a source file
 src/input.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/input.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/input.c.i
 .PHONY : src/input.c.i
 
 src/input.s: src/input.c.s
@@ -198,7 +198,7 @@ src/input.s: src/input.c.s
 
 # target to generate assembly for a file
 src/input.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/input.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/input.c.s
 .PHONY : src/input.c.s
 
 src/main.o: src/main.c.o
@@ -206,7 +206,7 @@ src/main.o: src/main.c.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -214,7 +214,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -222,15 +222,39 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+src/texture-manager.o: src/texture-manager.c.o
+.PHONY : src/texture-manager.o
+
+# target to build an object file
+src/texture-manager.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/texture-manager.c.o
+.PHONY : src/texture-manager.c.o
+
+src/texture-manager.i: src/texture-manager.c.i
+.PHONY : src/texture-manager.i
+
+# target to preprocess a source file
+src/texture-manager.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/texture-manager.c.i
+.PHONY : src/texture-manager.c.i
+
+src/texture-manager.s: src/texture-manager.c.s
+.PHONY : src/texture-manager.s
+
+# target to generate assembly for a file
+src/texture-manager.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/texture-manager.c.s
+.PHONY : src/texture-manager.c.s
 
 src/window.o: src/window.c.o
 .PHONY : src/window.o
 
 # target to build an object file
 src/window.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/window.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/window.c.o
 .PHONY : src/window.c.o
 
 src/window.i: src/window.c.i
@@ -238,7 +262,7 @@ src/window.i: src/window.c.i
 
 # target to preprocess a source file
 src/window.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/window.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/window.c.i
 .PHONY : src/window.c.i
 
 src/window.s: src/window.c.s
@@ -246,7 +270,7 @@ src/window.s: src/window.c.s
 
 # target to generate assembly for a file
 src/window.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mybe.dir/build.make CMakeFiles/mybe.dir/src/window.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myEngine.dir/build.make CMakeFiles/myEngine.dir/src/window.c.s
 .PHONY : src/window.c.s
 
 # Help Target
@@ -257,7 +281,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mybe"
+	@echo "... myEngine"
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"
@@ -270,6 +294,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/texture-manager.o"
+	@echo "... src/texture-manager.i"
+	@echo "... src/texture-manager.s"
 	@echo "... src/window.o"
 	@echo "... src/window.i"
 	@echo "... src/window.s"
