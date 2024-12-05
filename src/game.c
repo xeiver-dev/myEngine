@@ -1,8 +1,11 @@
 #include "game.h"
 #include "SDL.h"
+#include "SDL_image.h"
 #include "graphics.h"
 #include "input.h"
+#include "texture-manager.h"
 #include "window.h"
+#include <bits/types/cookie_io_functions_t.h>
 #include <stdio.h>
 
 void game__Initialize(Game* g, int width, int height)
@@ -14,6 +17,12 @@ void game__Initialize(Game* g, int width, int height)
     exit(-1);
   }
 
+  if (!IMG_Init(IMG_INIT_PNG)) 
+  {
+    fprintf(stderr, "Failed to initialize SDL_image: %s\n", IMG_GetError());
+    exit(-1);
+  }
+
   g->running = true;
 
   window__Initialize(&g->window, width, height, "My Game Engine");
@@ -21,7 +30,12 @@ void game__Initialize(Game* g, int width, int height)
   graphics__Init(&g->graphics, &g->window);
   input__Init(&g->input);
 
+  texture_manager__Init(&g->texture_manager);
+
+  SDL_Texture *tile_texture = graphics__LoadTexture(&g->graphics, "assets/texture.png");
+  texture_manager__Add(&g->texture_manager, tile_texture);
 }
+
 void game__Render(Game* g)
 {
   Color bgColor = (Color){100, 100, 100, 255};
@@ -37,6 +51,7 @@ void game__Render(Game* g)
   Color rectColor = (Color){0, 255, 255, 255};
   graphics__DrawRect(&g->graphics, "fill", &rect, rectColor);
 
+  texture_manager__Draw(&g->texture_manager, &g->graphics);
 
   graphics__Display(&g->graphics);
 }
@@ -87,5 +102,6 @@ void game__Shutdown(Game* g)
 {
   window__Close(&g->window);
   graphics__Quit(&g->graphics);
+  texture_manager__Close(&g->texture_manager, &g->graphics);
   SDL_Quit();
 }

@@ -3,6 +3,7 @@
 
 #include "graphics.h"
 #include "input.h"
+#include "texture-manager.h"
 #include "window.h"
 #include <stdbool.h>
 
@@ -10,6 +11,7 @@ typedef struct {
   Window window;
   Graphics graphics;
   Input input;
+  TextureManager texture_manager;
 
   bool          running;
   int           width, height;

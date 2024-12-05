@@ -10,12 +10,6 @@
 
 void graphics__Init(Graphics *gp, Window *win)
 {
-  if (!IMG_Init(IMG_INIT_PNG)) 
-  {
-    fprintf(stderr, "Failed to initialize SDL_image: %s\n", IMG_GetError());
-    exit(-1);
-  }
-
   gp->renderer = SDL_CreateRenderer(win->window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
   if (gp->renderer == NULL)
   {
